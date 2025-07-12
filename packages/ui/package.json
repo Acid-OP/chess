@@ -4,6 +4,7 @@
   "private": true,
     "exports": {
     "./postcss.config": "./postcss.config.mjs",
+    "./styles.css": "./styles.css",
     "./components/*": "./src/components/*.tsx",
     "./lib/*": "./src/lib/*.ts",
     "./styles/*": "./src/styles/*",
@@ -15,7 +16,8 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "ui": "pnpm dlx shadcn@latest"
   },
   "peerDependencies": {
     "react": "^18 || ^19",
